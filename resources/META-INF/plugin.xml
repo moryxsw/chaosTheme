@@ -1,0 +1,41 @@
+  <idea-plugin>
+    <!-- 插件唯一id，不能和其他插件项目重复，所以推荐使用com.xxx.xxx的格式。插件不同版本之间不能更改，若没有指定，则与插件名称相同 -->
+    <id>io.github.moryxsw.chaos.theme</id>
+    <!-- 插件名称，别人在官方插件库搜索你的插件时使用的名称 -->
+    <name>Chaos Theme</name>
+    <!-- 插件版本号 -->
+    <version>1.0</version>
+    <!-- 供应商主页和email（不能使用默认值，必须修改成自己的）-->
+    <vendor email="moryxsw@outlook.com" url="http://moryxsw.github.io">chaosTheme</vendor>
+    <!-- 插件的描述 （不能使用默认值，必须修改成自己的。并且需要大于40个字符）-->
+    <description><![CDATA[
+    自己尝试性开发的第一款主题插件，主要是为了适配最新版Idea<br>
+    <em>中间可能会碰到各种问题，一边使用一边完善</em>
+    <em>估计只会有自己用</em>
+    <em>本版本基于IC2021.3.3-ce版本进行开发，兼容社区版与旗舰版</em>
+    ]]></description>
+    <!-- 插件版本变更信息，支持HTML标签；将展示在 settings | Plugins 对话框和插件仓库的Web页面 -->
+    <!--    <change-notes><![CDATA[-->
+    <!--      Add change notes here.<br>-->
+    <!--      <em>most HTML tags may be used</em>-->
+    <!--    ]]>-->
+    <!--    </change-notes>-->
+
+    <!-- 插件兼容IDEAbuild 号-->
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+<!--  <depends>com.intellij.modules.platform</depends>-->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <themeProvider id="aed5ee37-d7af-4f84-8b47-cc041ef18294" path="/chaos.dark.theme.json"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
